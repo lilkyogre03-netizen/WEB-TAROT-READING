@@ -86,11 +86,11 @@ function TarotContent() {
                 </div>
                 <div className='arti2'>
                     <p>{!flip2 ? "Balik kartu masa kini" :
-                        (genre === 'cinta' ? kartuList[1]?.presentlove : genre === 'fortune' ? kartuList[1]?.presentfortune : kartuList[1]?.presentpast)}</p>
+                        (genre === 'cinta' ? kartuList[1]?.presentlove : genre === 'fortune' ? kartuList[1]?.presentfortune : kartuList[1]?.present)}</p>
                 </div>
                 <div className='arti3'>
                     <p>{!flip3 ? "Balik kartu masa depan" :
-                        (genre === 'cinta' ? kartuList[2]?.futurelove : genre === 'fortune' ? kartuList[2]?.futurefortune : kartuList[2]?.futurepast)}</p>
+                        (genre === 'cinta' ? kartuList[2]?.futurelove : genre === 'fortune' ? kartuList[2]?.futurefortune : kartuList[2]?.future)}</p>
                 </div>
             </div>
 
