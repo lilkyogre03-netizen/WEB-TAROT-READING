@@ -16,7 +16,7 @@ function TarotContent() {
 
     useEffect(() => {
         // TIPS: Nanti localhost:8080 ini harus diganti jadi URL Railway kamu ya!
-        fetch(`https://tarot-api-production.up.railway.app/api/kartu?genre=${genre}`)
+        fetch(`https://https-githubcom-lilkyogre03-netizen-tarot-api-production.up.railway.app/api/kartu?genre=${genre}`)
             .then(res => res.json())
             .then(data => setKartuList(data))
             .catch(err => console.error("Java tidak konek:", err));
