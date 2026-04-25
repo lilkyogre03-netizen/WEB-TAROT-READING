@@ -394,5 +394,69 @@ button {
   flex-direction: row;
   margin-top: 3%;
 }
+@media (max-width: 768px) {
+  /* Kartu */
+  .kotak1, .kotak2, .kotak3 {
+    width: 28vw;
+    height: calc(28vw * 1.6);
+  }
 
+  /* Container kartu */
+  .container {
+    gap: 3vw;
+    padding: 1rem 0;
+  }
+
+  /* Teks arti kartu */
+  .arti1, .arti2, .arti3 {
+    width: 28vw;
+    font-size: 2.5vw;
+  }
+
+  /* Judul */
+  .hjudul { font-size: 5vw; }
+  .p1, .p2 { font-size: 3vw; }
+
+  /* Input nama */
+  .input-nama {
+    font-size: 4vw;
+    width: 70vw;
+  }
+
+  /* Judul1 page nama */
+  .judul1 {
+    margin-top: 5%;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  /* H3 page nama */
+  .h3 {
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  /* Genre buttons */
+  .love, .life, .fortune {
+    width: 28vw;
+    font-size: 3vw;
+  }
+
+  /* btn ulang */
+  .btn-ulang {
+    font-size: 3vw;
+  }
+
+  /* secarti */
+  .secarti {
+    gap: 3vw;
+  }
+
+  /* footer */
+  .footer {
+    margin-top: 5%;
+  }
+}
   /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */
