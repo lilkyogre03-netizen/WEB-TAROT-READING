@@ -1,0 +1,398 @@
+@import "tailwindcss";
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2vw;
+  width: 100vw;             
+  padding: 2rem 0; 
+  @media  (min-width:2000px) {
+    margin-left: 19.9%;
+    
+  }
+  @media (max-width:1200) {
+      margin-left: 11.4%;
+    
+  }
+
+}
+@media (max-width :2000){
+  .footer{
+    margin-top: 47%;
+  }
+  .judul{
+    margin-top: 5%;
+  }
+}
+@media (min-width: 2000px) {
+  .judul{
+    margin-top: 5%;
+  }
+  .container{
+    margin-top: 1%;
+  }
+}
+@-webkit-keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+@-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+.p1,.p2,.p3,.p5,.p5,.p6,.hjudul,.judul,.judul1,.mulai,.mulai1,.input-nama{
+    animation: focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+}
+.kotak1,.kotak2,
+.kotak3{
+    -webkit-animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	  animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ .kotak1 {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  width: 13vw; 
+  height: calc(13vw * 1.6);
+  perspective: 600px;  
+  cursor: pointer;
+ }
+ .kotak-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;  
+}
+.kotak-inner.flipped {
+  transform: rotateY(180deg);
+}
+.kotak-front,
+.kotak-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+   overflow: hidden;  
+}
+.kotak-front img,
+.kotak-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   object-position: center;
+}
+.kotak-back {
+  transform: rotateY(180deg); 
+}
+ .kotak2 {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  width: 13vw;
+  height: calc(13vw * 1.6);
+  perspective: 600px; 
+  cursor: pointer;
+  
+}
+ .kotak2-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;  
+}
+.kotak2-inner.flipped {
+  transform: rotateY(180deg);
+}
+.kotak2-front,
+.kotak2-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+   overflow: hidden;  
+}
+.kotak2-front img ,
+.kotak2-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   object-position: center;
+}
+
+.kotak2-back {
+  transform: rotateY(180deg);  
+}
+.kotak3 {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  width: 13vw;
+  height: calc(13vw * 1.6);
+  perspective: 600px;  
+  cursor: pointer;
+}
+.kotak3-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+}
+.kotak3-inner.flipped {
+  transform: rotateY(180deg);
+}
+.kotak3-front,
+.kotak3-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+   overflow: hidden;  /* ← sembunyikan sisi belakang */
+}
+.kotak3-front img ,
+.kotak3-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   object-position: center;
+}
+.kotak3-back {
+  transform: rotateY(180deg);  /* ← back sudah dibalik dari awal */
+}
+.namacard{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 999;
+}
+.h2{
+  margin-left: clamp(2%,3%,4%);
+  font-size: 2vw;
+  z-index: 999;
+  margin-top: 3rem;
+  font-family: "Playfair Display SC", serif;
+}
+.h1{
+  margin-left: clamp(2%,3%,4%);
+  font-size: 2vw;
+  
+}
+.mulai{
+  /* margin-top: 70%; */
+  position: relative;
+  z-index: 999;
+   @apply text-[#ffbe33]
+}
+
+.judul{
+  font-family: "Playfair Display SC", serif;
+  display: flex;
+  flex-direction:column;  
+  @apply text-[#ffbe33]
+}
+.hjudul{
+  font-family: "Playfair Display SC", serif;
+  font-size: 2vw;
+  margin: auto;
+}
+.p1{
+  font-family: "Playfair Display SC", serif;
+  margin: auto;
+  font-size: 1vw;
+}
+.p2{
+  margin: auto;
+  font-size: 1vw;
+}
+.footer{
+  display: flex;
+  z-index: 111;
+  flex-direction:row ;
+  margin-top:51%;
+  @apply text-[#ffbe33]
+}
+.all{
+  background-color: rgba(0, 0, 0, 0.911);
+}
+.nav{
+  font-size: 0.9rem;
+   @apply text-[#ffbe33]
+   z-40
+}
+.video-wrapper {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+.video-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -20; 
+  transform: translate(-50%, -50%); 
+  object-fit: cover; 
+    pointer-events: none;
+}
+.video-overlay {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: -1;
+  pointer-events: none; 
+}
+.content-container {
+  position: relative;
+  z-index: 10; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+}
+.secarti{
+  font-family: "Playfair Display SC", serif;
+  display: flex;
+  flex-direction: row;
+justify-content: center;  
+  align-items: flex-start; 
+  gap: 2%;                 
+  margin-top: 1rem;
+}
+.arti1{
+  font-family: "Playfair Display SC", serif;
+  width: 13vw;             
+  text-align: center;
+   @apply text-[#ffbe33]
+}
+.arti2{
+  font-family: "Playfair Display SC", serif;
+  width: 13vw;              
+  text-align: center;
+   @apply text-[#ffbe33]
+}
+.arti3{
+  font-family: "Playfair Display SC", serif;
+  width: 13vw;             
+  text-align: center;
+   @apply text-[#ffbe33]
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.all {
+  background-color: rgba(0, 0, 0, 0.911);
+  height: 100vh;   
+  display: flex;
+  flex-direction: column;
+}
+next-route-announcer {
+  display: none !important;
+  pointer-events: none !important;
+}
+.konten-utama {
+  position: relative;
+  z-index: 10;
+  pointer-events: all;
+}
+button {
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */
+.form-nama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.input-nama {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffbe33;
+  color: #ffbe33;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 0.5rem;
+  outline: none;
+  font-family: "Playfair Display SC", serif;
+  width: 30vw;
+  
+}
+.input-nama::placeholder {
+  color: rgba(255,190,51,0.4);
+}
+.p4,
+.p3{
+  font-family: "Playfair Display SC", serif;
+  position: relative;
+  margin: auto;  @apply text-[#ffbe33]
+}
+.judul1{
+  font-family: "Playfair Display SC", serif;
+  display: flex;
+  margin-top: 17%;
+  flex-direction:column;  
+  @apply text-[#ffbe33]
+}
+.mulai1{
+  position: relative;
+}
+.h3{
+  font-family: "Playfair Display SC", serif;
+  margin: auto;
+   @apply text-[#ffbe33]
+}
+ /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */  /* PAGE NAMA */
+ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */
+
+.ganre{
+  margin-bottom: 200%;
+  @apply text-[#ffbe33]
+}
+.judulganre{
+  margin-bottom: 20%;
+}
+.p5{
+  font-family: "Playfair Display SC", serif;
+  margin-top: 0;
+}
+.pil{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: flex-start;  
+  gap: 2%;                  
+  margin-top: 3rem;
+}
+.love,.life,.fortune{
+  width: 13vw;           
+  text-align: center;
+  @apply text-[#ffbe33]
+
+}
+
+.btn-ulang{
+   @apply text-[#ffbe33];
+   animation: focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+  -webkit-animation: focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9vw;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  margin-top: 3%;
+}
+
+  /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */
