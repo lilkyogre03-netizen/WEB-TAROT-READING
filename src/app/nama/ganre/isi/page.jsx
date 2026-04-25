@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, Suspense } from 'react'; // Tambah Suspense di sini
 import { useRouter, useSearchParams } from 'next/navigation';
-
+import { useParams } from 'next/navigation';
 // 1. Pindahkan semua logika asli ke komponen ini
 function TarotContent() {
     const [kartuList, setKartuList] = useState([]);
@@ -13,6 +13,7 @@ function TarotContent() {
     const user = searchParams.get('user');
     const genre = searchParams.get('genre');
     const router = useRouter();
+    const { name } = useParams();
 
     useEffect(() => {
         // TIPS: Nanti localhost:8080 ini harus diganti jadi URL Railway kamu ya!
@@ -95,7 +96,7 @@ function TarotContent() {
             </div>
 
             <div className='ulang'>
-                <button className='btn-ulang' onClick={() => router.push('/')}>
+                <button className='btn-ulang' onClick={() => router.push(`/nama/ganre?user=${user}`)}>
                     <p>LIHAT JALUR TAKDIR LAINNYA?</p>
                 </button>
             </div>
