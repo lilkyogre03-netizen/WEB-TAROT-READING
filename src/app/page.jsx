@@ -29,7 +29,7 @@ export default function HomePage() {
       </div>
       <div className="container">
         <div className="kotak1"><img src="/tarotglobal/THE EMPEROR.png" alt="" /></div>
-        <div className="kotak2"><img src="/tarotglobal/THE Fool.png" alt="foool" /></div>
+        <div className="kotak2"><img src="/tarotglobal/THE FOOL.png" alt="foool" /></div>
         <div className="kotak3"><img src="/tarotglobal/THE DEATH.png" alt="foool" /></div>
       </div>
       <div className='namacard'>

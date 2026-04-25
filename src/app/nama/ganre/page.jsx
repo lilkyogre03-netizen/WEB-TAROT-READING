@@ -27,7 +27,7 @@ function GanreContent() {
 
             <div className="container">
                 <div className='genre-card' onClick={() => pilihGenre('cinta')}>
-                    <div className="kotak1" ><img src="/tarotglobal/THE LOVERS.PNG" alt="" /></div>
+                    <div className="kotak1" ><img src="/tarotglobal/THE LOVERS.png" alt="" /></div>
                 </div>
                 <div className='genre-card' onClick={() => pilihGenre('diri')}>
                     <div className="kotak2"><img src="/tarotglobal/THE FOOL.png" alt="foool" /></div>
