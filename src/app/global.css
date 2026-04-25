@@ -399,18 +399,23 @@ button {
   .kotak1, .kotak2, .kotak3 {
     width: 28vw;
     height: calc(28vw * 1.6);
-  }
 
+  }
+  
   /* Container kartu */
   .container {
-    gap: 3vw;
+       gap: 2vw;
     padding: 1rem 0;
+    width: 100%;
+    margin-left: 0 !important;
+    justify-content: center;
+    overflow: visible;
   }
 
   /* Teks arti kartu */
   .arti1, .arti2, .arti3 {
-    width: 28vw;
-    font-size: 2.5vw;
+    width: 26vw;
+    font-size: 2.2vw;
   }
 
   /* Judul */
@@ -425,7 +430,7 @@ button {
 
   /* Judul1 page nama */
   .judul1 {
-    margin-top: 5%;
+    margin-top: 17%;
     font-size: 4vw;
     text-align: center;
     padding: 0 1rem;
@@ -457,6 +462,15 @@ button {
   /* footer */
   .footer {
     margin-top: 5%;
+  }
+    .all {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  body, html {
+    overflow-y: auto;
   }
 }
   /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */ /* PAGE GANRE */
