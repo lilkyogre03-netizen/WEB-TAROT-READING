@@ -1,8 +1,8 @@
 "use client";
-import { useState, useEffect, Suspense } from 'react'; // Tambah Suspense di sini
+import { useState, useEffect, Suspense } from 'react'; 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useParams } from 'next/navigation';
-// 1. Pindahkan semua logika asli ke komponen ini
+
 function TarotContent() {
     const [kartuList, setKartuList] = useState([]);
     const [flip, setflip] = useState(false);
@@ -16,7 +16,7 @@ function TarotContent() {
     const { name } = useParams();
 
     useEffect(() => {
-        // TIPS: Nanti localhost:8080 ini harus diganti jadi URL Railway kamu ya!
+        
         fetch(`https://https-githubcom-lilkyogre03-netizen-tarot-api-production.up.railway.app/api/kartu?genre=${genre}`)
             .then(res => res.json())
             .then(data => setKartuList(data))
@@ -104,7 +104,6 @@ function TarotContent() {
     );
 }
 
-// 2. Fungsi utama yang dipanggil Next.js cukup membungkusnya dengan Suspense
 export default function Mainpage() {
     return (
         <Suspense fallback={<div className="loading">Sedang membaca takdir...</div>}>

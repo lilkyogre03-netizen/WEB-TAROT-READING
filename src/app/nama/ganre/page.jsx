@@ -2,11 +2,11 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 
-// 1. Buat komponen baru untuk menampung isi halaman
+
 function GanreContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
-    const user = searchParams.get('user'); // ambil nama dari URL
+    const user = searchParams.get('user');
 
     const pilihGenre = (genre) => {
         router.push(`/nama/ganre/isi?user=${encodeURIComponent(user)}&genre=${genre}`);
@@ -46,7 +46,7 @@ function GanreContent() {
     );
 }
 
-// 2. Export default harus membungkus komponen tadi dengan Suspense
+
 export default function GanrePage() {
     return (
         <Suspense fallback={<div>Memuat Takdir...</div>}>
